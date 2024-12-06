@@ -4,3 +4,4 @@
 * [Formatting](formatting.md)
 * [Filesystem](filesystem.md)
 * [Executor](executor.md)
+* [Compatibility](compatibility.md)
