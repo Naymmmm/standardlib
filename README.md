@@ -5,7 +5,7 @@
 </picture>
 
 ## What is StandardLib?
-StandardLib is a standard for custom Luau/Roblox Lua environments. It is designed to be a replacement for UNC.
+StandardLib is a standard for custom Luau/Roblox Lua environments. It is designed to be a replacement for UNC. You can read the StandardLib documentation [here](https://standardlib.naymmm.lol/).
 ## Contributing
 If you wish to contribute, you are free to submit a pull request or to suggest a function, open an issue.
 ## Testing
