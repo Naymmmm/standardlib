@@ -1,3 +1,25 @@
+---
+description: Miscellaneous functions to ensure compatibility.
+---
+
 # Compatibility
 
-To ensure compatibility with all scripts, you should add UNC & or sUNC support, or atleast some functions. Please do not come running at my door screaming for UNC functions & "THIS EXECUTOR DID NOT PASS UNC !!!! WTF IS STANDARD LIB"; I really don't appreciate it.
+
+
+{% hint style="info" %}
+These functions are to maximize compatibility.
+{% endhint %}
+
+```lua
+-- Import the executor library.
+local comp = require("@lib/compatibility")
+```
+
+## unc(sunc: bool?)
+
+Runs a UNC, sUNC if provided.
+
+```lua
+-- Example
+exe.unc(true) -- Starts an sUNC test
+```
