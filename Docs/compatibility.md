@@ -17,9 +17,10 @@ local comp = require("@lib/compatibility")
 
 ## unc(sunc: bool?)
 
-Runs a UNC, sUNC if provided.
+Runs a UNC, sUNC if provided. This is mainly for compatibility reasons and testing, you do not need to implement this.
 
 ```lua
 -- Example
-exe.unc(true) -- Starts an sUNC test
+comp.unc(true) -- Starts an sUNC test
+comp.unc() -- Starts a regular UNC test
 ```
