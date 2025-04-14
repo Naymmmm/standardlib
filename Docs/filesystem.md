@@ -14,9 +14,9 @@ Take caution when developing filesystem functions, these functions could cause c
 </strong><strong>local fs = require("@lib/filesystem")
 </strong></code></pre>
 
-## writefile()
+## writefile(file: string)
 
-This function writes a file to the local filesystem, in a shared region.
+This function writes a file or creates a file to the local filesystem, in a shared region.
 
 ```lua
 -- Write a file.
@@ -28,13 +28,13 @@ fs.writefile("These tacos are tasty, hawk tuah!", "what.txt", "./Yapping") -- Cr
 
 
 
-## readfile()
+## readfile(file: string): buffer
 
 {% hint style="warning" %}
 This is a potentially dangerous function and could lead to security issues.
 {% endhint %}
 
-This function reads a file from the local filesystem, in the shared folder. It is important you do not expose your environment to foreign files and restrict it to a shared region.
+This function reads a file from the local filesystem, in the shared folder. It is important you do not expose your environment to foreign files and restrict it to a shared region. Returns a `buffer`
 
 ```lua
 -- Read a file.
@@ -44,7 +44,7 @@ fs.readfile(file: string): string
 fs.readfile("./Yapping/what.txt") -- Errors if it could not find the file.
 ```
 
-## deletefile()
+## deletefile(file: string)
 
 {% hint style="danger" %}
 This is a dangerous function. Treat with caution.
